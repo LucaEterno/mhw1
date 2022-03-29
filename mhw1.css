@@ -1,0 +1,273 @@
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: rgba(0, 0, 0);
+  margin: 0;
+}
+  
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+nav {
+  padding: 5px;
+  background-color:rgb(31, 31, 31);
+
+  font-family: 'Red Hat Mono', monospace;
+  font-size: 1em;
+  color: white;
+}
+
+#links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+a {
+  cursor: pointer;
+}
+  
+a.button {
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+  
+a.button:hover {
+  background-color: white;
+  color: black;
+}
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+header {
+  background-image: url("cover.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+@media (max-width: 700px) {
+  header {
+    height: 250px;
+    line-height: 1.2;
+  }
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 3em;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2em;
+  }
+}
+
+#links, header h1, .button {
+  text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+#conteiner {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+#profile {
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 100%;
+    background-color: darkslategrey;
+    background-image: url("profile.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+#conteiner p {
+    text-align: center;
+}
+
+#conteiner p strong {
+  font-size: 1.5em;
+  color: black;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+ol {
+  width: calc((100%/3)*2);
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  ol {
+    width: 80%;
+  }
+}
+
+::marker{
+  font-size: 2em;
+}
+
+li {
+  padding-left: 40px;
+}
+
+.list {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.list h1 {
+  color: black;
+  font-size: 2em;
+  margin: 5px 0;
+  font-family: 'Noto Serif', serif;
+}
+
+.list h5 {
+  color: rgb(50, 180, 160);
+  font-size: 1.2em;
+  margin: 5px 0;
+  font-family: 'Ramaraja', serif;
+}
+
+.list p {
+  margin: 20px 0;
+  font-family: 'Red Hat Mono', monospace;
+}
+
+#commento {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  color: rgb(50, 180, 160);
+}
+
+
+#Img1 {
+  background-image: url("excel.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#Img2 {
+  background-image: url("www.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#Img3 {
+  background-image: url("google.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#Img4 {
+  background-image: url("facebook.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#Img5 {
+  background-image: url("wiki.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+@media (max-width: 700px) {
+  #Img1, #Img2, #Img3, #Img4, #Img5 {
+    height: 250px;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+footer {
+  background-color: rgb(31, 31, 31);
+  padding: 75px;
+
+  font-family: 'Ramaraja', serif;
+  font-size:  1.5em;
+  color: rgba(255, 255, 255, .8);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  footer {
+    font-size:  1em;
+  }
+}
